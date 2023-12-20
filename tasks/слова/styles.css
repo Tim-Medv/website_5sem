@@ -1,0 +1,118 @@
+body {
+    background-color: #021920;
+    padding: 10%;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 55vw;
+    height: 70vh;
+}
+
+.topSection, .bottomSections {
+    position: relative;
+    width: 100%;
+}
+
+.topSection {
+    height: 20%;
+    border: #000000 0.7vw solid;
+    background-color: aliceblue;
+}
+
+.bottomSections {
+    height: 80%;
+}
+
+.rightSection, .leftSection {
+    position: absolute;
+    height: 100%;
+}
+
+.leftSection {
+    left: 0%;
+    width: 30%;
+    border: #000000 1vh solid;
+    background-color: aliceblue;
+}
+
+.rightSection {
+    right: -2.5%;
+    width: 70%;
+    border: #000000 1vh solid;
+    background-color: aliceblue;
+}
+
+.inputArea, .actionArea {
+    position: absolute;
+    top: 25%;
+}
+
+.inputArea {
+    left: 2%;
+    width: 25vw;
+}
+
+.inputField {
+    width: 100%;
+    height: 100%;
+}
+
+.actionArea {
+    left: 70%;
+}
+
+.outputArea {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 98%;
+    height: 10vh;
+    border: #000000 1vh solid;
+    background-color: azure;
+    text-align: center;
+}
+
+/* список слов на левой панели */
+.staticWordList {
+    list-style: none;
+    padding-left: 0%;
+}
+
+.dynamicWordList {
+    min-height: 50px;
+    border: 1px dashed #000000;
+    padding: 10px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.dynamicWordList li {
+    border: 1px solid #000000; 
+    padding: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.staticWordList li {
+    border: 1px solid #000000;
+    padding: 5px;
+    margin: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    user-select: none; 
+}
+
+
+ul, li {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+  }
