@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.svg-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Анимация для перемещения красной точки */
+@keyframes moveDot {
+    0% {
+        top: 40px;
+        left: 40px;
+        background-color: blue;
+    }
+    15% {
+        top: 40px;
+        left: 155px;
+        background-color: red;
+    }
+    30% {
+        top: 155px;
+        left: 155px;
+        background-color: green;
+    }
+    32% {
+        top: 155px;
+        left: 143px;
+        background-color: yellow;
+    }
+    44% {
+        top: 62px;
+        left: 143px;
+        background-color: purple;
+    }
+    57% {
+        top: 155px;
+        left: 107px;
+        background-color: orange;
+    }
+    58% {
+        top: 155px;
+        left: 92px;
+        background-color: pink;
+    }
+    71% {
+        top: 62px;
+        left: 54px;
+        background-color: brown;
+    }
+    83% {
+        top: 155px;
+        left: 54px;
+        background-color: cyan;
+    }
+    85% {
+        top: 155px;
+        left: 40px;
+        background-color: lime;
+    }
+    100% {
+        top: 40;
+        left: 40;
+        background-color: violet;
+    }
+}
+
+/* Базовый стиль красной точки */
+.red-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    top: 40px; 
+    left: 40px;
+    border-radius: 50%;
+}
+
+/* Активируем анимацию при наведении на контейнер */
+.svg-container:hover .red-dot {
+    animation: moveDot 2s infinite;
+}
+
+/* Добавляем тень при нажатии */
+.svg-container:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.hidden-image {
+    display: none;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.hello-text {
+    display: none;
+    font-family: 'Georgia', serif;
+    font-size: 66px;
+    color: #FF6347;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shake {
+    animation: shake 0.6s ease-out;
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(10px); }
+    30% { transform: translateX(-14px); }
+    40% { transform: translateX(14px); }
+    50% { transform: translateX(-17px); }
+    60% { transform: translateX(17px); }
+    70% { transform: translateX(-14px); }
+    80% { transform: translateX(14px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+/*!!*/
